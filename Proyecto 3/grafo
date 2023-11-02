@@ -1,0 +1,19 @@
+// Grafo de Tareas
+digraph {
+	"PY-100
+T-001" [fillcolor=green style=filled]
+	"PY-100
+T-002" [fillcolor=green style=filled]
+	"PY-100
+T-003" [fillcolor=green style=filled]
+	"PY-101
+T-004"
+	"PY-102
+T-011"
+	"PY-103
+T-016"
+	"PY-104
+T-021"
+	"PY-108
+T-026"
+}
