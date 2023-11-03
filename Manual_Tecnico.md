@@ -1,4 +1,4 @@
-# Proyecto2-EDD
+# Proyecto3-EDD
 
 ## 202110180 - Juan Carlos Gonzalez Valdez - seccion C
 
@@ -63,6 +63,14 @@ La clase BTree representa un árbol B y se utiliza para almacenar pares de IDs d
 Clase HashTable:
 
 La clase HashTable representa una tabla hash y se utiliza para almacenar y gestionar información relacionada con empleados. Proporciona métodos para la inserción, recuperación y eliminación de empleados utilizando una estructura de tabla hash.
+
+clase Grafo:
+
+Esta es uan clase encargada de crear los nodos de los grafos para llamarlo conforme las tareas.
+
+Clase Block:
+
+En esta clase van guardados los datos del block chain en base a la tabla hash.
 
 Clase EmployeeInfoDialog:
 
@@ -220,4 +228,20 @@ Uso en el Proyecto: La Tabla Hash se utiliza para mantener una lista de empleado
 
 Una Tabla Hash es una estructura de datos que utiliza una función hash para mapear claves (en este caso, IDs de empleados) a valores (datos de empleado). Esto permite un acceso rápido a los datos utilizando la clave. En el proyecto, se utiliza la Tabla Hash para almacenar y recuperar rápidamente los detalles de los empleados utilizando sus IDs como claves.
 
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/3e605119-6bf1-48b9-9e3c-05d8784ffdf0)
+
+
 ![image](https://github.com/Larryking-8-6/Proyecto2-EDD/assets/125839529/f6e16036-0ffe-4a5f-967e-b88d138f3acc)
+
+
+
+Reporte de block chain:
+
+Dicho reporte se encarga de argear seguridad a los datos, destacando fecha, dato anterioir, dato actual y datos de los mismos/
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/6069caf9-63da-4077-857a-00d402bf692a)
+
+
+Completar Tareas:
+
+En este caso se le agrego al sistema un sistema de completacion para asi pasar por 3 procesos sin repetirse, los caules son: Completado, en porceso y en espera para asi cargarse.
