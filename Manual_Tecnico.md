@@ -16,6 +16,7 @@ Librerias y importaciones de la parte grafica:
 | `from PyQt5.QtWidgets import ...`  | Importación de clases y widgets para construir interfaces gráficas.|
 | `QMessageBox`                     | Clase para mostrar cuadros de diálogo de mensaje.|
 | `QPushButton`                     | Clase para crear botones en una interfaz gráfica.|
+| `Bcrypt`                     | Modulo para crear encriptaciones de datos.|
 | `QMainWindow`                     | Clase principal de una ventana de la interfaz gráfica.|
 
 
