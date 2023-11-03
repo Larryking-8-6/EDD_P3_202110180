@@ -94,10 +94,10 @@ class Task:
 class Grafo:
     def __init__(self):
         self.principal = None
-        self.nodo_origen = None  # Nuevo atributo para el nodo origen
+        self.nodo_origen = None
 
     def inicio(self, proyecto):
-        self.nodo_origen = NodoGrafo(proyecto)  # Crear el nodo origen
+        self.nodo_origen = NodoGrafo(proyecto)
         self.principal = self.nodo_origen
 
     def insertarFila(self, u):
@@ -156,8 +156,8 @@ class Grafo:
         while aux is not None:
             temp = aux.siguiente
             while temp is not None:
-                if aux.estado == 3:  # Cambia esto según tus criterios de estado para tareas completadas
-                    # Agrega una relación de flecha desde una tarea completada a la siguiente tarea
+                if aux.estado == 3:  
+
                     cadena += "\"{}\" -> \"{}\" [label=\"Tarea\"];\n".format(aux.valor, temp.valor)
                 temp = temp.siguiente
             aux = aux.abajo
@@ -168,7 +168,7 @@ class Grafo:
 
     def renderizar_grafo(self):
         self.generar_grafo_dot()
-        os.system("dot -Tpdf grafo.dot -o grafo.pdf")  # Cambia el formato de salida si lo deseas
+        os.system("dot -Tpdf grafo.dot -o grafo.pdf")  
 
     def CambiarEstadoTarea(self, tarea, estado):
         aux = self.principal
@@ -510,7 +510,7 @@ class BTree:
                     dot_file.write(f'  "{task_id}_{project_id}" [label="{{Tarea ID: {task_id} | Proyecto ID: {project_id}}}"];\n')
 
                 if not node.is_root():
-                    parent_id = node.parent.keys[0][0]  # Obtener el ID del padre
+                    parent_id = node.parent.keys[0][0]  
                     dot_file.write(f'  "{parent_id}_{node.keys[0][1]}" -> "{node.keys[0][0]}_{node.keys[0][1]}";\n')
 
                 for child in node.children:
@@ -534,7 +534,7 @@ class HashTable:
         index = self.hash(key)
         if self.table[index] is None:
             self.table[index] = []
-        self.table[index].append(employee)  # Almacena el objeto empleado directamente en la lista
+        self.table[index].append(employee)  
         self.size += 1
 
     def find(self, key):
@@ -743,7 +743,7 @@ class MenuPrincipal(QWidget):
                 if ok:
                     selected_project = next(project for project in projects if project_name.endswith(f"(ID: {project.project_id})"))
 
-                    # Verifica si ya hay una tarea "En Proceso" para este proyecto
+            
                     if selected_project.project_id not in self.tasks_in_progress:
                         status = "En Proceso"
                     else:
@@ -751,7 +751,7 @@ class MenuPrincipal(QWidget):
 
                     new_task = Task(task_name, selected_employee_id, selected_project.project_id, status)
 
-                    # Agrega la tarea a las tareas en proceso solo si está "En Proceso"
+               
                     if status == "En Proceso":
                         self.tasks_in_progress[selected_project.project_id] = new_task
 
@@ -783,7 +783,7 @@ class MenuPrincipal(QWidget):
             employee_id, ok = QInputDialog.getText(self, "Asignar Empleado a Tarea", "ID del empleado a asignar a la tarea:")
 
             if ok:
-                # Verificar si el empleado existe
+           
                 if not Employee.find_employee_by_id(employee_id):
                     QMessageBox.critical(self, "Error", "El empleado especificado no existe.")
                 else:
@@ -812,14 +812,14 @@ class MenuPrincipal(QWidget):
         if ok:
             selected_task = next(task for task in self.created_tasks if task_name.endswith(f"(ID: {task.task_id})"))
 
-            # Obtener la lista de el arbol AVL
+          
             projects = self.project_table.get_sorted_projects()
 
             if not projects:
                 print("No hay proyectos disponibles para asignar tareas.")
                 return
 
-            # Crear una lista
+           
             project_names = [f"{project.name} (ID: {project.project_id})" for project in projects]
 
             project_name, ok = QInputDialog.getItem(self, "Asignar Tarea a Proyecto", "Selecciona un proyecto:", project_names, 0, False)
@@ -1131,7 +1131,7 @@ class MenuPrincipal(QWidget):
                             continue
 
                         employee = Employee(employee_id, name, password, position)
-                        self.employees.append(employee)  # Agrega a la lista
+                        self.employees.append(employee)
                         print(f"Cargando empleado - Código: {employee_id}, Nombre: {name}, Puesto: {position}")
 
                 print("Empleados cargados desde CSV con éxito.")
@@ -1178,7 +1178,7 @@ class MenuPrincipal(QWidget):
 
                                 for task_data in tasks_data:
                                     task_name = task_data["nombre"]
-                                    employee_id = task_data.get("empleado", "")  # Intenta obtener el ID del empleado
+                                    employee_id = task_data.get("empleado", "")  
 
                                     if employee_id:
                                         if project_id not in tasks_in_process:
@@ -1220,7 +1220,7 @@ class MenuPrincipal(QWidget):
                 f'Timestamp: {block.timestamp}\n'
                 f'Data: {block.data}\n'
                 f'Previous Hash: {block.previous_hash}\n'
-                f'Password: {block.password}'  # Usa el atributo password_hash
+                f'Password: {block.password}' 
             )
             dot.node(f'Block{index}', label, shape='box')
 
