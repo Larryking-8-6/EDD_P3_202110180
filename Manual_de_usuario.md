@@ -84,6 +84,11 @@ Filtrar proyectos, esto deja filtrat en base a los activos y no activos pero deb
 ![image](https://github.com/Larryking-8-6/Proyecto2-EDD/assets/125839529/5dacad7b-916e-4f50-b5ab-4a1a39cdb3a3)
 
 
+Procesos actuales:
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/e9548640-a15e-41e8-a0af-ec3eb436f87a)
+
+Aqui es donde definimos que tareas en base al orde se realizan apra seguir con la sigueinte del mismo poryecto.
+
 Nueva tarea:
 ![image](https://github.com/Larryking-8-6/Proyecto2-EDD/assets/125839529/3e2280a9-2904-47f0-9f80-b596634d95be)
 Aqui podemos activar un despliegue de empleados para definir quien la hara:
@@ -95,6 +100,18 @@ Y tambien definir en que proyecto sera:
 ![image](https://github.com/Larryking-8-6/Proyecto2-EDD/assets/125839529/a7d999fc-c8ab-4809-bbec-d09ae1b87162)
 
 Tambien podemos cambiar la aseignacion de tareas y empleados.
+
+## Completar tareas
+
+Como agregado nuevo se implemnto un area para terminar tareas del programa donde se puden tener avances en tiempo real del mismo en base a los poryectos y tareas cargados.
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/48a6d399-5f75-44d3-b373-285a24ab2641)
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/c4017c56-361b-43ea-9b5a-740e651ea08b)
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/f7839efc-f0ed-4d0e-84cd-c3b374f50e50)
+
+Estas mismas al ser completadas actualizan su estado para su finalizacion.
 
 ### Generar reportes
 
@@ -115,8 +132,24 @@ Debido a un par de inconvenientes los datos se cargan de manera erronea y no gen
 
 ## Reporte Hash:
 
-Dicho reporte no se termino de la manera correcta.
+En este apartado podemos ver los datos de los empleados junto con la codificacion de los mismos en las contrasenias para uemtnar la seguridad.
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/85cb6589-701b-4104-95e1-f9f0a820450f)
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/d42ff542-ac9a-479b-9a00-2d5829af77c1)
+
+## Reporte de Block chain
+
+En este apartado se muestra el cifrado y guardado de datos en un bloque para mayor seguridad.
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/35d47dc6-0abf-4f06-a431-830d7fe30854)
+
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/af48d798-c4fb-47a9-ad93-14dd88dff6d0)
+
+
+## Reporte Grafo
+![image](https://github.com/Larryking-8-6/EDD_P3_202110180/assets/125839529/ebda365e-42d4-4b48-9a4e-a2464f42319f)
 ![Uploading image.png…]()
 
-Debido a la nula optencion de datos que da el programa no se pudo concluir de manera correcta.
+
+En este reporte se pueden obvservar las tareas completadas paso a paso.
 
